@@ -22,3 +22,6 @@
 ###    else:
 ###        recommendation = "Choose between the following: none, low, medium, high"
 ###    return recommendation
+
+
+### For the recommend_portfolio function with intent_request as the input variable, the info for first_name, age, investment_amount, risk_level, and source. Now within a big if statement, we first see is the data for the user is valid. After the nest statement, we get the current session attributes with intent_request["sessionAttributes"] assigned to a variable. At the end of the outside if statemnt, we return the delegate function with parameters output_session_attributes and get_slot(intent_request). On the outside of the big if statement, recommendation is updated with get_recommendation(riskLevel). 
